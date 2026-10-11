@@ -1,0 +1,21 @@
+# Large genotype files and PLINK datasets
+*.vcf
+*.vcf.gz
+*.bed
+*.bim
+*.fam
+
+# Temporary PLINK outputs
+*.log
+*.nosex
+*.prune.in
+*.prune.out
+
+# Root-level intermediate outputs; keep selected results/ files
+/1000G_chr22*
+/chr22_pca.*
+/chr22_pca_with_pop.tsv
+/chr22_prune.*
+/chr22_pruned.*
+/population_labels.tsv
+/plink.log
