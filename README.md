@@ -12,6 +12,23 @@ This is an initial stage of a broader Coronary Artery Disease (CAD)
 Polygenic Risk Score (PRS) project. CAD PRS calculation has not yet
 been completed in this workflow.
 
+## Ancestry and Genetic Population Structure Analysis
+
+This project performs an exploratory **genetic population-structure analysis using Principal Component Analysis (PCA)** on chromosome 22 genotype data from the 1000 Genomes Project Phase 3 reference dataset.
+
+PCA reduces genetic variation across selected SNPs into principal components, allowing individuals to be visualized according to patterns of genetic similarity. The resulting PCA coordinates are annotated with known population and superpopulation labels from the 1000 Genomes reference panel.
+
+### Objectives
+- Explore genetic variation among individuals using chromosome 22 SNP data.
+- Visualize genetic clustering patterns across 1000 Genomes superpopulations.
+- Understand the use of LD pruning and PCA in population-genetics workflows.
+- Establish a foundation for future ancestry-aware genetic analyses and Coronary Artery Disease (CAD) Polygenic Risk Score (PRS) research.
+
+### Important Limitations
+This is an exploratory, chromosome 22-only analysis. The observed clusters may reflect population structure, but this workflow does not independently infer or validate an individual's ancestry. A genome-wide analysis using appropriate quality control, reference populations, and ancestry-inference methods would be needed for a more comprehensive assessment.
+
+Population labels are used to interpret the PCA plot; they are not predicted by the PCA itself. PCA coordinates alone do not establish an individual's geographic, ethnic, or genealogical identity.
+
 ## Data Sources
 
 - [Chromosome 22 genotype VCF](https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz)
